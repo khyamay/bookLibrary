@@ -16,7 +16,8 @@
 				<label for="keyword">Keywords: </label><input id="keywords" type="text" />
 				<button id="add">Add</button>
 			</div>
-			<div class="bookContainer">
+		</form>
+		<div class="bookContainer">
 				<img src="img/book.jpg" alt="Book">
 				<ul>
 					<li>Title</li>
@@ -24,17 +25,18 @@
 					<li>Release Date</li>
 					<li>Keywords</li>
 				</ul>
-		</form>
+				<button class="delete"> Delete </button>
+			</div>
 	</div>
 	<script id="bookTemplate" type="text/templates">
-	<img src="<%= coverImage %>" />
-	<ul>
-	    <li><%= title %></li>
-	    <li><%= author %></li>
-	    <li><%= releaseDate %></li>
-	    <li><%= keywords %></li>
-	</ul>	
-	<button class="delete"> Delete </button>
+		<img src="<%= coverImage %>" />
+		<ul>
+		    <li><%= title %></li>
+		    <li><%= author %></li>
+		    <li><%= releaseDate %></li>
+		    <li><%= keywords %></li>
+		</ul>	
+		<button class="delete"> Delete </button>
 	</script>
 	<script src="js/lib/jquery/jquery.min.js"></script>
     <script src="js/lib/underscore/underscore-min.js"></script>
